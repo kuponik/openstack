@@ -55,6 +55,8 @@ class Object extends AbstractResource implements Creatable, Deletable, HasMetada
         $this->lastModified = $response->getHeaderLine('Last-Modified');
         $this->contentType = $response->getHeaderLine('Content-Type');
         $this->metadata = $this->parseMetadata($response);
+
+        return $this;
     }
 
     /**
