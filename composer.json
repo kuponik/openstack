@@ -1,5 +1,8 @@
 {
     "name": "qpony/openstack",
+    "replace": {
+        "php-opencloud/openstack": "2.*"
+    },
     "authors": [
         {
             "name": "Jamie Hannaford",
